@@ -5,10 +5,6 @@
  */
 package s4;
 
-/**
- *
- * @author fedeg
- */
 public class FiltroRepercutirRozamiento implements Filtro {
 
     static final double ROZAMIENTO = -4;

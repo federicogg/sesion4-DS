@@ -9,10 +9,6 @@ import GUI.PanelBotones;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- *
- * @author fedeg
- */
 public class Main {
 
     public static void main(String[] args) {
@@ -25,12 +21,11 @@ public class Main {
 
         while (true) {
             try {
-                Thread.sleep(800);
+                Thread.sleep(1000);
             } catch (Exception e) {
                 e.printStackTrace();
             }
             cliente.solicitar(PanelBotones.estadoMotor);
-            System.err.println(PanelBotones.estadoMotor);
         }
 
     }

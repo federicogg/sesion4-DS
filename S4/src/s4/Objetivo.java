@@ -14,10 +14,6 @@ import java.awt.event.WindowEvent;
 import java.text.DecimalFormat;
 import javax.swing.JFrame;
 
-/**
- *
- * @author fedeg
- */
 public class Objetivo {
 
     private JFrame frame;
@@ -32,6 +28,7 @@ public class Objetivo {
         frame = new JFrame();
         frame2 = new JFrame();
         screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        kilometros = 0;
         iniciarComponentes();
         configurarVentana();
 
@@ -88,6 +85,12 @@ public class Objetivo {
         return velocidad;
     }
 
+    private double cuentaKilometros(double velocidad) {
+        double kilometrosRecientes;
+        kilometrosRecientes = velocidad * 0.000277778;
+        return kilometrosRecientes;
+    }
+
     public void ejecutar(double revoluciones) {
 
         //Velocímetro
@@ -99,6 +102,16 @@ public class Objetivo {
         salpicadero.setVelocimetro(velocidadString);
 
         //CuentaKilometros
+        DecimalFormat df2 = new DecimalFormat("#.00000");
+        double kilometrosRecientes;
+        kilometrosRecientes = cuentaKilometros(velocidad);
+        kilometros += kilometrosRecientes;
+        String contadorRecienteString = df2.format(kilometrosRecientes) + " km";
+        String contadorTotalString = df2.format(kilometros) + " km";
+
+        salpicadero.setContadorReciente(contadorRecienteString);
+        salpicadero.setContadorTotal(contadorTotalString);
+
         //CuentaRevoluciones
         String revolucionesString = revoluciones + "RPM";
         salpicadero.setCuentaRevoluciones(revolucionesString);

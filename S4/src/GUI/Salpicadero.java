@@ -5,10 +5,6 @@
  */
 package GUI;
 
-/**
- *
- * @author fedeg
- */
 public class Salpicadero extends javax.swing.JPanel {
 
     /**

@@ -13,10 +13,6 @@ import javax.swing.SpringLayout;
 import s4.EstadoMotor;
 import s4.Cliente;
 
-/**
- *
- * @author fedeg
- */
 public class PanelBotones extends javax.swing.JPanel {
 
     public static EstadoMotor estadoMotor;

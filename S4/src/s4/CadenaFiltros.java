@@ -7,10 +7,6 @@ package s4;
 
 import java.util.ArrayList;
 
-/**
- *
- * @author fedeg
- */
 public class CadenaFiltros {
 
     private ArrayList<Filtro> filtros;

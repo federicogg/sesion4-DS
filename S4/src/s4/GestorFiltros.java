@@ -5,10 +5,6 @@
  */
 package s4;
 
-/**
- *
- * @author fedeg
- */
 public class GestorFiltros {
 
     CadenaFiltros cadenaFiltros;
