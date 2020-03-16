@@ -10,5 +10,9 @@ package s4;
  * @author fedeg
  */
 public enum EstadoMotor {
-
+    ACELERANDO,
+    FRENANDO,
+    APAGANDO,
+    APAGADO,
+    ENCENDIDO
 }
